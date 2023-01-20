@@ -1,0 +1,29 @@
+[
+	{
+		"investigar" : {
+			"paradigma" : {
+				"positivista" : {
+					"enfoque" : {
+						"cuantitativo" : {
+							"instrumentos": ["encuesta", "cuestionario", "muestreo aleatorio", "escala tipo Likert", "escalograma de Guttman", "tablas de registro"],
+							"dise&#241;o" : ["experimental", "no experimental"],
+							"variables" :["dependiente", "independiente"], 
+							"alcance": ["exploratorio", "descriptivo", "correlacional", "explicativa"]
+						}
+					}
+				},
+				"interpretativo" : {
+					"enfoque" : {
+						"cualitativo" : {
+							"instrumentos": ["observaci&#243;n participante", "entrevista", "an&#225;lisis documental", "autoreportaje", "categorizaci&#243;n", "triangulaci&#243;n y teor&#237;a Fundamentada", "perspectivas de diferentes autores", "referencias"],
+							"dise&#241;o" : ["teor&#237;a-fundamentada", "etnogr&#225;fico", "narrativos", "investigaci&#243;n-acci&#243;n", "fenomenol&#243;gicos"]
+						}
+					}
+				},
+				"sociocr&#237;tico" : {
+					"enfoque" : "critico-reflexivo"
+				}
+			}
+		}
+	}
+]

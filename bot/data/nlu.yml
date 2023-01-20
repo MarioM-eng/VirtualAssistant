@@ -1,0 +1,257 @@
+version: "2.0"
+
+nlu:
+
+- regex: name
+  examples: |
+    - (?<=\bsoy )([\w\s]+)|(?<=\bnombre es )([\w\s]+)|(?<=\bllamo )([\w\s]+)
+
+- intent: saludar
+  examples: |
+    - hey
+    - hola
+    - Hola
+    - hola alex soy [Jaime](name)
+    - hola alex soy [Jaime](name) ¿cómo estás?
+    - ¿cómo vas?
+    - hola¿cómo vas?
+    - soy [Mario](name)
+    - Hola soy [Mario Morales](name)
+    - Hola soy [Ana Cremades](name)
+    - [Andrés Carmona](name)
+    - [Álvarez](name)
+    - [Jesús Aviléz](name)
+    - [Quintero](name)
+    - [Montiel](name)
+    - [Guillermo Carrasquilla](name)
+    
+
+- intent: despedida
+  examples: |
+    - Nos vemos
+    - Chao
+    - adios
+    - adiós
+    - Ten un buen resto de dia
+
+- intent: afirmar
+  examples: |
+    - si
+    - claro
+    - claro que si
+    - eso suena bien
+    - correcto
+    - afirmativo
+
+- intent: negar
+  examples: |
+    - no
+    - nunca
+    - jamás
+    - no tengo idea
+    - ni idea
+    - de ningún modo
+    - realmente no
+    - negativo
+
+- intent: modo_genial
+  examples: |
+    - perfecto
+    - genial
+    - increible
+    - maravilloso
+    - me siento muy bien
+    - bien y tu?
+
+
+- intent: preguntar
+  examples: |
+    - que es [investigar](dato)
+    - que son los [paradigmas](dato)
+    - ¿Qué es [paradigma](dato)?
+    - que son las [muestra](dato)
+    - que son las [poblacion](dato)
+    - que significa [enfoque](dato)
+    - ¿Qué es [enfoque](dato)?
+    - ¿Qué es un [dise&#241;o](dato) de investigación?
+    - que es un [dise&#241;o](dato)?
+
+- intent: preguntar_paradigma
+  examples: |
+    - Qué es el [positivista](para)
+    - que es el pardigma [positivista](para)
+    - ¿Qué es el [positivista](para)?
+    - [interpretativo](para)
+    - cual es el [interpretativo](para)
+    - que significa [interpretativo](para)
+    - en que consiste el paradigma [socio-cr&#237;tico](para)
+    - [socio-cr&#237;tico](para)
+
+- intent: preguntar_enfoque
+  examples: |
+    - enfoque [cuantitativo](enfoque)
+    - que es el enfoque [cuantitativo](enfoque)
+    - cual es el enfoque [cualitativo](enfoque)
+    - [instrumentos](datoEnfoque) del enfoque [cuantitativo](enfoque)
+    - [variables](datoEnfoque) del enfoque [cuantitativo](enfoque)
+    - [alcances]{"entity":"datoEnfoque","value":"alcance"} del enfoque [cualitativo](enfoque)
+    - cual es el [diseño]{"entity":"datoEnfoque","value":"dise&#241;o"} del enfoque [cuantitativo](enfoque)
+    - cuales son los [diseños]{"entity":"datoEnfoque","value":"dise&#241;o"} del enfoque [cualitativo](enfoque)
+    - [tipos de investigacion]{"entity":"datoEnfoque","value":"dise&#241;o"} del enfoque [cualitativo](enfoque)
+
+- intent: preguntar_paradigma_de_enfoque
+  examples: |
+    - A que [paradigma](dato) pertenece el enfoque [cuantitativo](enfoque)?
+    - A qué [paradigma](dato) va asociado el enfoque [cualitativo](enfoque)?
+    - de que [paradigma](dato) es el enfoque [cuantitativo](enfoque)?
+    - si estoy en un enfoque [cuantitativo](enfoque) qué [paradigma](dato) debo seguir?
+    - Si tengo un enfoque [cuantitativo](enfoque) que [paradigma](dato) sigo?
+    - tipo de [paradigma](dato) del enfoque [cuantitativo](enfoque)
+
+- intent: preguntar_enfoque_de_paradigma
+  examples: |
+    - que enfoque se asocia al paradigma [positivista](para)?
+    - ¿Qué enfoque se asocia al paradigma [positivista](para)?
+    - ¿Qué enfoque pertenece al paradigma [interpretativo](para)?
+    - ¿Qué enfoque tiene el paradigma [sociocritico](para)?
+    - si estoy en un paradigma [interpretativo](para) que [enfoque](dato) sigo
+    - tipo de enfoque del paradigma [interpretativo](para)
+
+- intent: relacion_tipo_investigacion_paradigma_enfoque
+  examples: |
+    - si estoy en un tipo de investigación [experimental](dise&#241;o) cual sería mi [enfoque](dato)?
+    - si estoy en un tipo de investigación [no experimental](dise&#241;o) ¿cuál sería mi [enfoque](dato)?
+    - que [enfoque](dato) de investigacion sigo si tengo un tipo de investigacion [etnogr&#225;fico](dise&#241;o)
+    - ¿Qué [enfoque](dato) sigo si tengo un tipo de investigación [teor&#237;a-fundamentada](dise&#241;o)?
+    - si estoy en un tipo de investigación [narrativos](dise&#241;o) cual sería mi [enfoque](dato)?
+    - que [enfoque](dato) sigo si tengo un tipo de investigacion [investigaci&#243;n-acci&#243;n](dise&#241;o)
+    - ¿Qué [enfoque](dato) sigo si tengo un tipo de investigación [fenomenol&#243;gicos](dise&#241;o)?
+    - si estoy en un tipo de investigación [experimental](dise&#241;o) cual sería mi [paradigma](dato)?
+    - si estoy en un tipo de investigación [no experimental](dise&#241;o) ¿cuál sería mi [paradigma](dato)?
+    - que [paradigma](dato) de investigacion sigo si tengo un tipo de investigacion [etnogr&#225;fico](dise&#241;o)
+    - ¿Qué [paradigma](dato) sigo si tengo un tipo de investigación [teor&#237;a-fundamentada](dise&#241;o)?
+    - si estoy en un diseño [narrativos](dise&#241;o) cual sería mi [paradigma](dato)?
+    - que [paradigma](dato) sigo si tengo un tipo de investigacion [investigaci&#243;n-acci&#243;n](dise&#241;o)
+    - ¿Qué [paradigma](dato) sigo si tengo un tipo de investigación [fenomenol&#243;gicos](dise&#241;o)?
+
+- intent: pregunta/grupo
+  examples: |
+    - Como se llama el grupo de investigacion de la facultad de ingenieria?
+    - ¿Cómo se llama el grupo de investigación de la facultad de ingeniería?
+
+
+- intent: pregunta/nombre
+  examples: |
+    - cual es tu nombre?
+    - ¿Cuál es tu nombre?
+    - como te llamas
+    - ¿Cómo te llamas?
+    - como podria llamarte
+    - ¿Cómo podría llamarte?
+
+- intent: modo_triste
+  examples: |
+    - mi dia fue horrible
+    - estoy triste
+    - no me siento bien
+    - estoy desepcionado
+    - super triste
+    - estoy muy triste
+    - triste
+    - demasiado triste
+    - nada bien
+    - extremadamente triste
+    - mal y tu?
+    - mal
+
+- intent: bot_challenge
+  examples: |
+    - eres un bot?
+    - eres un robot?
+    - eres un humano?
+    - estoy hablando con un bot?
+    - estoy hablando con un robot?
+    - estoy hablando con un humano?
+
+- intent: out_of_scope
+  examples: |
+    - ¿De donde eres?
+    - ¿Cuánto es 2+2?
+    - ¿Quién es el presidente?
+    - ¿Qué estudio?
+    -  tienes novia?
+
+- intent: gracias
+  examples: |
+    - gracias
+    - Muchas gracias!
+    - te lo agradezco
+
+
+# Sinonimos
+- synonym: investigar
+  examples: |
+    - investigacion
+    - investigación
+    - investigaciones
+
+- synonym: paradigma
+  examples: |
+    - paradigmas
+    - paradígma
+    - paradígmas
+
+- synonym: enfoque
+  examples: |
+    - enfoques
+
+- synonym: muestra
+  examples: |
+    - muestras
+
+- synonym: dise&#241;o
+  examples: |
+    - diseño
+    - diseños
+    - diseno
+    - disenos
+
+- synonym: variables
+  examples: |
+    - variable
+
+- synonym: alcance
+  examples: |
+    - alcances
+
+- synonym: instrumentos
+  examples: |
+    - instrumento
+
+- synonym: teor&#237;a-fundamentada
+  examples: |
+    - teoría-fundamentada
+    - teoria-fundamentada
+
+- synonym: fenomenol&#243;gicos
+  examples: |
+    - fenomenológicos
+    - fenomenologicos
+    - fenomenológico
+    - fenomenologico
+
+- synonym: narrativos
+  examples: |
+    - narrativo
+
+- synonym: etnogr&#225;fico
+  examples: |
+    - etnográfico
+    - etnográficos
+    - etnograficos
+    - etnografico
+
+- synonym: socio-cr&#237;tico
+  examples: |
+    - socio-crítico
+    - socio-critico

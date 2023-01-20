@@ -1,0 +1,149 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+version: "2.0"
+
+stories:
+- story: saludar path
+  steps:
+    - user: |
+        Hola soy Mario
+      intent: saludar
+    - slot_was_set : 
+      - name: any
+    - action: action_name
+    - slot_was_set : 
+      - user_provided_name : true
+    - action: utter_saludar
+    - user: |
+        Genial
+      intent: modo_genial
+    - action: utter_feliz
+
+- story: saludar path 2
+  steps:
+    - user: |
+        Hola
+      intent: saludar
+    - slot_was_set : 
+      - name: any
+    - action: action_name
+    - slot_was_set : 
+      - user_provided_name : false
+    - action: utter_saludar_sin_name
+    - user: |
+        Genial
+      intent: modo_genial
+    - action: utter_feliz
+
+- story: preguntar path
+  steps:
+    - user: |
+        que es investigar
+      intent: preguntar
+    - slot_was_set:
+      - dato
+    - action: action_responder
+    - action: utter_mas
+
+- story: preguntar paradigma path
+  steps:
+    - user: |
+        que es paradigma
+      intent: preguntar_paradigma
+    - action: action_responder_paradigma
+    - action: utter_mas
+
+- story: preguntar enfoque path 1
+  steps:
+    - user: |
+        que es enfoque
+      intent: preguntar_enfoque
+    - action: action_responder_enfoque
+    - action: utter_mas
+
+- story: preguntar enfoque path 2
+  steps:
+    - user: |
+        instrumentos del enfoque cualitativo
+      intent: preguntar_enfoque
+    - slot_was_set:
+      - datoEnfoque: instrumentos
+    - action: action_caracteristica_enfoque
+    - action: utter_mas
+
+- story: preguntar enfoque path 3
+  steps:
+    - user: |
+        diseño del enfoque cuntitativo
+      intent: preguntar_enfoque
+    - slot_was_set:
+      - datoEnfoque: dise&#241;o
+    - action: action_caracteristica_enfoque
+    - action: utter_mas
+
+- story: preguntar enfoque path 4
+  steps:
+    - user: |
+        variables del enfoque cuntitativo
+      intent: preguntar_enfoque
+    - slot_was_set:
+      - datoEnfoque: variables
+    - action: action_caracteristica_enfoque
+    - action: utter_mas
+
+- story: preguntar enfoque path 5
+  steps:
+    - user: |
+        alcance del enfoque cuntitativo
+      intent: preguntar_enfoque
+    - slot_was_set:
+      - datoEnfoque: alcance
+    - action: action_caracteristica_enfoque
+    - action: utter_mas
+
+- story: relacion de paradigma y enfoque con tipos de investigacion o diseños path
+  steps:
+    - user: |
+        si estoy en un tipo de investigación experimental cual sería mi enfoque?
+      intent: relacion_tipo_investigacion_paradigma_enfoque
+    - action: action_relacion_tipo_investigacion_paradigma_enfoque
+    - action: utter_mas
+
+- story: preguntar paradigma del enfoque path
+  steps:
+    - user: |
+        A que paradigma pertenece el enfoque cuantitativo?
+      intent: preguntar_paradigma_de_enfoque
+    - action: action_paradigma_de_enfoque
+    - action: utter_paradigma_de_enfoque
+    - action: utter_mas
+
+- story: preguntar enfoque del paradigma path
+  steps:
+    - user: |
+        que enfoque se asocia al paradigma positivista?
+      intent: preguntar_enfoque_de_paradigma
+    - action: action_enfoque_de_paradigma
+    - action: utter_enfoque_de_paradigma
+    - action: utter_mas
+
+- story: sad path 1
+  steps:
+    - user: |
+        muy mal
+      intent: modo_triste
+    - action: utter_animate
+    - action: utter_ayudar
+    - user: |
+        si
+      intent: afirmar
+    - action: utter_feliz
+
+- story: sad path 2
+  steps:
+    - user: |
+        no
+      intent: negar
+    - action: utter_despedida
+
+

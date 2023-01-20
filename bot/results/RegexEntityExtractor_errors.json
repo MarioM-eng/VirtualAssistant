@@ -1,0 +1,1626 @@
+[
+  {
+    "text": "Andr\u00e9s Carmona",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Andr\u00e9s Carmona",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.995026171207428,
+        "value": "Andr\u00e9s Carmona",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00c1lvarez",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "\u00c1lvarez",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9953475594520569,
+        "value": "\u00c1lvarez",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Jes\u00fas Avil\u00e9z",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Jes\u00fas Avil\u00e9z",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9958406090736389,
+        "value": "Jes\u00fas Avil\u00e9z",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Quintero",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Quintero",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9946940541267395,
+        "value": "Quintero",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Montiel",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Montiel",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.9953027963638306,
+        "value": "Montiel",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Guillermo Carrasquilla",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "Guillermo Carrasquilla",
+        "entity": "name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "name",
+        "start": 0,
+        "end": 22,
+        "confidence_entity": 0.9967893958091736,
+        "value": "Guillermo Carrasquilla",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que es investigar",
+    "entities": [
+      {
+        "start": 7,
+        "end": 17,
+        "value": "investigar",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 7,
+        "end": 17,
+        "confidence_entity": 0.9907325506210327,
+        "value": "investigar",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que son los paradigmas",
+    "entities": [
+      {
+        "start": 12,
+        "end": 22,
+        "value": "paradigmas",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 12,
+        "end": 22,
+        "confidence_entity": 0.9931458234786987,
+        "value": "paradigma",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 es paradigma?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 17,
+        "value": "paradigma",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 8,
+        "end": 17,
+        "confidence_entity": 0.9768370985984802,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que son las muestra",
+    "entities": [
+      {
+        "start": 12,
+        "end": 19,
+        "value": "muestra",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.9966601133346558,
+        "value": "muestra",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que son las poblacion",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "poblacion",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 12,
+        "end": 21,
+        "confidence_entity": 0.9942135214805603,
+        "value": "poblacion",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que significa enfoque",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.948432981967926,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 es enfoque?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 15,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.8845316171646118,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 es un dise&#241;o de investigaci\u00f3n?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 22,
+        "value": "dise&#241;o",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 11,
+        "end": 22,
+        "confidence_entity": 0.9976287484169006,
+        "value": "dise&#241;o",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que es un dise&#241;o?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 21,
+        "value": "dise&#241;o",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 10,
+        "end": 21,
+        "confidence_entity": 0.997878909111023,
+        "value": "dise&#241;o",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qu\u00e9 es el positivista",
+    "entities": [
+      {
+        "start": 10,
+        "end": 21,
+        "value": "positivista",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 10,
+        "end": 21,
+        "confidence_entity": 0.9987699389457703,
+        "value": "positivista",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que es el pardigma positivista",
+    "entities": [
+      {
+        "start": 19,
+        "end": 30,
+        "value": "positivista",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9986812472343445,
+        "value": "positivista",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 es el positivista?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 22,
+        "value": "positivista",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 11,
+        "end": 22,
+        "confidence_entity": 0.9987699389457703,
+        "value": "positivista",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "interpretativo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "interpretativo",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9987780451774597,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cual es el interpretativo",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "interpretativo",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9987490177154541,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que significa interpretativo",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "interpretativo",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 14,
+        "end": 28,
+        "confidence_entity": 0.9988285899162292,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "en que consiste el paradigma socio-cr&#237;tico",
+    "entities": [
+      {
+        "start": 29,
+        "end": 47,
+        "value": "socio-cr&#237;tico",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 29,
+        "end": 47,
+        "confidence_entity": 0.9982510209083557,
+        "value": "socio-cr&#237;tico",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "socio-cr&#237;tico",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "socio-cr&#237;tico",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 0,
+        "end": 18,
+        "confidence_entity": 0.9986186027526855,
+        "value": "socio-cr&#237;tico",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "enfoque cuantitativo",
+    "entities": [
+      {
+        "start": 8,
+        "end": 20,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enfoque",
+        "start": 8,
+        "end": 20,
+        "confidence_entity": 0.9985712766647339,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que es el enfoque cuantitativo",
+    "entities": [
+      {
+        "start": 18,
+        "end": 30,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enfoque",
+        "start": 18,
+        "end": 30,
+        "confidence_entity": 0.9985187649726868,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cual es el enfoque cualitativo",
+    "entities": [
+      {
+        "start": 19,
+        "end": 30,
+        "value": "cualitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enfoque",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9986876845359802,
+        "value": "cualitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "instrumentos del enfoque cuantitativo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "instrumentos",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 25,
+        "end": 37,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9928869605064392,
+        "value": "instrumentos",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 25,
+        "end": 37,
+        "confidence_entity": 0.9985948204994202,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "variables del enfoque cuantitativo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "variables",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 22,
+        "end": 34,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9911640882492065,
+        "value": "variables",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 22,
+        "end": 34,
+        "confidence_entity": 0.998600423336029,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "alcances del enfoque cualitativo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "alcance",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 21,
+        "end": 32,
+        "value": "cualitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9937527775764465,
+        "value": "alcance",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "enfoque",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.9986897110939026,
+        "value": "cualitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cual es el dise\u00f1o del enfoque cuantitativo",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "dise&#241;o",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9925139546394348,
+        "value": "dise&#241;o",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "enfoque",
+        "start": 30,
+        "end": 42,
+        "confidence_entity": 0.9983640313148499,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "cuales son los dise\u00f1os del enfoque cualitativo",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "dise&#241;o",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "value": "cualitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 15,
+        "end": 22,
+        "confidence_entity": 0.994576096534729,
+        "value": "dise&#241;o",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "enfoque",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.9985976815223694,
+        "value": "cualitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tipos de investigacion del enfoque cualitativo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "dise&#241;o",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "value": "cualitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9706704616546631,
+        "value": "tipos",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.9986275434494019,
+        "value": "cualitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "A que paradigma pertenece el enfoque cuantitativo?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 15,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 37,
+        "end": 49,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 6,
+        "end": 15,
+        "confidence_entity": 0.6944929957389832,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 37,
+        "end": 49,
+        "confidence_entity": 0.9983491897583008,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "A qu\u00e9 paradigma va asociado el enfoque cualitativo?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 15,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 39,
+        "end": 50,
+        "value": "cualitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 6,
+        "end": 15,
+        "confidence_entity": 0.7315341830253601,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 39,
+        "end": 50,
+        "confidence_entity": 0.9985670447349548,
+        "value": "cualitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "de que paradigma es el enfoque cuantitativo?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 16,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 31,
+        "end": 43,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.7388802766799927,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 31,
+        "end": 43,
+        "confidence_entity": 0.9983468055725098,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un enfoque cuantitativo qu\u00e9 paradigma debo seguir?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 35,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      },
+      {
+        "start": 40,
+        "end": 49,
+        "value": "paradigma",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enfoque",
+        "start": 23,
+        "end": 35,
+        "confidence_entity": 0.9985973238945007,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 40,
+        "end": 49,
+        "confidence_entity": 0.7663952708244324,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Si tengo un enfoque cuantitativo que paradigma sigo?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      },
+      {
+        "start": 37,
+        "end": 46,
+        "value": "paradigma",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "enfoque",
+        "start": 20,
+        "end": 32,
+        "confidence_entity": 0.9987117052078247,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 37,
+        "end": 46,
+        "confidence_entity": 0.7258111834526062,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tipo de paradigma del enfoque cuantitativo",
+    "entities": [
+      {
+        "start": 8,
+        "end": 17,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "value": "cuantitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 8,
+        "end": 17,
+        "confidence_entity": 0.763992190361023,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 30,
+        "end": 42,
+        "confidence_entity": 0.9984326958656311,
+        "value": "cuantitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que enfoque se asocia al paradigma positivista?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 46,
+        "value": "positivista",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.9986335635185242,
+        "value": "positivista",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 enfoque se asocia al paradigma positivista?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 47,
+        "value": "positivista",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 36,
+        "end": 47,
+        "confidence_entity": 0.9986447691917419,
+        "value": "positivista",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 enfoque pertenece al paradigma interpretativo?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 50,
+        "value": "interpretativo",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 36,
+        "end": 50,
+        "confidence_entity": 0.9985657334327698,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 enfoque tiene el paradigma sociocritico?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 44,
+        "value": "sociocritico",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "para",
+        "start": 32,
+        "end": 44,
+        "confidence_entity": 0.997370719909668,
+        "value": "sociocritico",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un paradigma interpretativo que enfoque sigo",
+    "entities": [
+      {
+        "start": 25,
+        "end": 39,
+        "value": "interpretativo",
+        "entity": "para"
+      },
+      {
+        "start": 44,
+        "end": 51,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.6955602765083313,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "para",
+        "start": 25,
+        "end": 39,
+        "confidence_entity": 0.9987013339996338,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tipo de enfoque del paradigma interpretativo",
+    "entities": [
+      {
+        "start": 30,
+        "end": 44,
+        "value": "interpretativo",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 20,
+        "end": 29,
+        "confidence_entity": 0.5509811639785767,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "para",
+        "start": 30,
+        "end": 44,
+        "confidence_entity": 0.9986262321472168,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un tipo de investigaci\u00f3n experimental cual ser\u00eda mi enfoque?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 49,
+        "value": "experimental",
+        "entity": "dise&#241;o"
+      },
+      {
+        "start": 64,
+        "end": 71,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 37,
+        "end": 49,
+        "confidence_entity": 0.49575769901275635,
+        "value": "experimental",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 64,
+        "end": 71,
+        "confidence_entity": 0.9660182595252991,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un tipo de investigaci\u00f3n no experimental \u00bfcu\u00e1l ser\u00eda mi enfoque?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 52,
+        "value": "no experimental",
+        "entity": "dise&#241;o"
+      },
+      {
+        "start": 68,
+        "end": 75,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 37,
+        "end": 39,
+        "confidence_entity": 0.8549366593360901,
+        "value": "no",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 40,
+        "end": 52,
+        "confidence_entity": 0.5552611351013184,
+        "value": "experimental",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 68,
+        "end": 75,
+        "confidence_entity": 0.9666190147399902,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que enfoque de investigacion sigo si tengo un tipo de investigacion etnogr&#225;fico",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "enfoque",
+        "entity": "dato"
+      },
+      {
+        "start": 68,
+        "end": 84,
+        "value": "etnogr&#225;fico",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 68,
+        "end": 84,
+        "confidence_entity": 0.998830258846283,
+        "value": "etnogr&#225;fico",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 enfoque sigo si tengo un tipo de investigaci\u00f3n teor&#237;a-fundamentada?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "enfoque",
+        "entity": "dato"
+      },
+      {
+        "start": 52,
+        "end": 76,
+        "value": "teor&#237;a-fundamentada",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.791002094745636,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 52,
+        "end": 76,
+        "confidence_entity": 0.9988933205604553,
+        "value": "teor&#237;a-fundamentada",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un tipo de investigaci\u00f3n narrativos cual ser\u00eda mi enfoque?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 47,
+        "value": "narrativos",
+        "entity": "dise&#241;o"
+      },
+      {
+        "start": 62,
+        "end": 69,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 37,
+        "end": 47,
+        "confidence_entity": 0.9963425993919373,
+        "value": "narrativos",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 62,
+        "end": 69,
+        "confidence_entity": 0.965674102306366,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que enfoque sigo si tengo un tipo de investigacion investigaci&#243;n-acci&#243;n",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "enfoque",
+        "entity": "dato"
+      },
+      {
+        "start": 51,
+        "end": 81,
+        "value": "investigaci&#243;n-acci&#243;n",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 4,
+        "end": 11,
+        "confidence_entity": 0.515077531337738,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 51,
+        "end": 81,
+        "confidence_entity": 0.9985600113868713,
+        "value": "investigaci&#243;n-acci&#243;n",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 enfoque sigo si tengo un tipo de investigaci\u00f3n fenomenol&#243;gicos?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "enfoque",
+        "entity": "dato"
+      },
+      {
+        "start": 52,
+        "end": 72,
+        "value": "fenomenol&#243;gicos",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 5,
+        "end": 12,
+        "confidence_entity": 0.7928187251091003,
+        "value": "enfoque",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 52,
+        "end": 72,
+        "confidence_entity": 0.9990642666816711,
+        "value": "fenomenol&#243;gicos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un tipo de investigaci\u00f3n experimental cual ser\u00eda mi paradigma?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 49,
+        "value": "experimental",
+        "entity": "dise&#241;o"
+      },
+      {
+        "start": 64,
+        "end": 73,
+        "value": "paradigma",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 37,
+        "end": 49,
+        "confidence_entity": 0.4972746670246124,
+        "value": "experimental",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 64,
+        "end": 73,
+        "confidence_entity": 0.9895227551460266,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un tipo de investigaci\u00f3n no experimental \u00bfcu\u00e1l ser\u00eda mi paradigma?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 52,
+        "value": "no experimental",
+        "entity": "dise&#241;o"
+      },
+      {
+        "start": 68,
+        "end": 77,
+        "value": "paradigma",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 37,
+        "end": 39,
+        "confidence_entity": 0.8534442186355591,
+        "value": "no",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 40,
+        "end": 52,
+        "confidence_entity": 0.5537480711936951,
+        "value": "experimental",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 68,
+        "end": 77,
+        "confidence_entity": 0.9892547130584717,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que paradigma de investigacion sigo si tengo un tipo de investigacion etnogr&#225;fico",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 70,
+        "end": 86,
+        "value": "etnogr&#225;fico",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.9331852793693542,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 70,
+        "end": 86,
+        "confidence_entity": 0.998829185962677,
+        "value": "etnogr&#225;fico",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 paradigma sigo si tengo un tipo de investigaci\u00f3n teor&#237;a-fundamentada?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 14,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 54,
+        "end": 78,
+        "value": "teor&#237;a-fundamentada",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.978706955909729,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 54,
+        "end": 78,
+        "confidence_entity": 0.9988945126533508,
+        "value": "teor&#237;a-fundamentada",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un tipo de investigaci\u00f3n narrativos cual ser\u00eda mi paradigma?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 47,
+        "value": "narrativos",
+        "entity": "dise&#241;o"
+      },
+      {
+        "start": 62,
+        "end": 71,
+        "value": "paradigma",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 37,
+        "end": 47,
+        "confidence_entity": 0.9963506460189819,
+        "value": "narrativos",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dato",
+        "start": 62,
+        "end": 71,
+        "confidence_entity": 0.9893438816070557,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que paradigma sigo si tengo un tipo de investigacion investigaci&#243;n-acci&#243;n",
+    "entities": [
+      {
+        "start": 4,
+        "end": 13,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 53,
+        "end": 83,
+        "value": "investigaci&#243;n-acci&#243;n",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 4,
+        "end": 13,
+        "confidence_entity": 0.9348773956298828,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 53,
+        "end": 83,
+        "confidence_entity": 0.9985581040382385,
+        "value": "investigaci&#243;n-acci&#243;n",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "\u00bfQu\u00e9 paradigma sigo si tengo un tipo de investigaci\u00f3n fenomenol&#243;gicos?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 14,
+        "value": "paradigma",
+        "entity": "dato"
+      },
+      {
+        "start": 54,
+        "end": 74,
+        "value": "fenomenol&#243;gicos",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 5,
+        "end": 14,
+        "confidence_entity": 0.978888988494873,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "dise&#241;o",
+        "start": 54,
+        "end": 74,
+        "confidence_entity": 0.9990660548210144,
+        "value": "fenomenol&#243;gicos",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

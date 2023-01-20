@@ -1,0 +1,317 @@
+version: "2.0"
+
+intents:
+  - saludar:
+     use_entities:
+      - name
+      - user_provided_name
+  - despedida:
+      use_entities: []
+  - afirmar
+  - negar
+  - modo_genial
+  - preguntar:
+      ignore_entities :
+        - user_provided_name
+        - para
+        - enfoque
+        - datoEnfoque
+        - alcance
+        - dise&#241;o
+  - preguntar_paradigma:
+      ignore_entities :
+        - user_provided_name
+        - dato
+        - enfoque
+        - datoEnfoque
+        - alcance
+        - dise&#241;o
+  - preguntar_enfoque:
+      ignore_entities :
+        - user_provided_name
+        - dato
+        - para
+        - alcance
+        - dise&#241;o
+  - preguntar_enfoque_de_paradigma:
+      ignore_entities :
+        - user_provided_name
+        - dato
+        - datoEnfoque
+        - enfoque
+        - alcance
+        - dise&#241;o
+  - preguntar_paradigma_de_enfoque:
+      ignore_entities :
+        - user_provided_name
+        - dato
+        - datoEnfoque
+        - para
+        - alcance
+        - dise&#241;o
+  - relacion_tipo_investigacion_paradigma_enfoque:
+      ignore_entities :
+        - user_provided_name
+        - enfoque
+        - datoEnfoque
+        - para
+        - alcance
+  # - relacion_diseno_paradigma_enfoque
+  - pregunta:
+      use_entities: []
+  - modo_triste:
+      use_entities: []
+  - bot_challenge:
+      use_entities: []
+
+entities:
+  - name
+  - user_provided_name
+  - dato
+  - para
+  - enfoque
+  - datoEnfoque
+  - alcance
+  - dise&#241;o
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+  user_provided_name:
+    type: bool
+  dato:
+    type: categorical
+    values:
+      - investigar
+      - paradigma
+      - muestra
+      - poblacion
+      - enfoque
+      - dise&#241;o
+    influence_conversation: true
+  para:
+    type: text
+  enfoque:
+    type: categorical
+    values:
+      - cuantitativo
+      - cualitativo
+      - critico-reflexivo
+    influence_conversation: true
+  datoEnfoque:
+    type: categorical
+    values:
+      - instrumentos
+      - dise&#241;o
+      - variables
+      - alcance
+  alcance:
+    type: text
+  dise&#241;o:
+    type: text
+    
+responses:
+  utter_saludar:
+  - text: "¡Hola! {name} ¿Cómo estás?"
+
+  utter_saludar_sin_name:
+  - text: "¡Hola! ¿Cómo estás?"
+
+  utter_animate:
+  - text: "¡Anímate!"
+
+  utter_ayudar:
+  - text: "¿te pude ayudar?"
+
+  utter_mas:
+  - text: "¿Algo más?"
+
+  utter_feliz:
+  - text: "¡Genial! ¡Sigue así! Hazme una pregunta"
+
+  utter_investigar:
+  - text: '"Conjunto de procesos sistemáticos, críticos y empíricos que se aplican al estudio de un fenómeno o problema con el resultado (o el objetivo) de ampliar su conocimiento." Hernandez Sampieri, R.(2018). METODOLOGÍA DE LA INVESTIGACIÓN LAS RUTAS CUANTITATIVA, CUALITATIVA Y MIXTA(pp.4). 
+  Para conocer más acerca del tema <a target="_blank" href="https://play.google.com/books/reader?id=5A2QDwAAQBAJ&hl=es_419&pg=GBS.PA4">da click aquí</a>'
+
+  utter_paradigma:
+  - text: '"Es el modelo dominante en las ciencias sociales para muchos también el denominado método científico, su finalidad es la de explicar, relevar y verificar las teorías" Hernandez Sampieri, R.(2018). METODOLOGÍA DE LA INVESTIGACIÓN LAS RUTAS CUANTITATIVA, CUALITATIVA Y MIXTA(pp.4). 
+  Para conocer más acerca del tema <a target="_blank" href="https://play.google.com/books/reader?id=5A2QDwAAQBAJ&hl=es_419&pg=GBS.PA4">da click aquí</a>'
+
+  utter_enfoque:
+  - text: "Definición de enfoque"
+
+  utter_dise&#241;o:
+  - text: '"El término diseño se refiere al plan o estrategia concebida para obtener la información que se desea con el fin de responder al planteamiento del problema" (Wentz, 2014; McLaren, 2014; Creswell, 2013a, Hernández-Sampieri et al., 2013 y Kalaian, 2008). METODOLOGÍA DE LA INVESTIGACIÓN LAS RUTAS CUANTITATIVA, CUALITATIVA Y MIXTA(pp.4). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_poblacion:
+  - text: '"Población o universo: Conjunto de todos los casos que concuerdan con determinadas especificaciones." Hernandez Sampieri, R.(2016). Metodología de la investigación(pp.174). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_muestra:
+  - text: '"La muestra es, en esencia, un subgrupo de la población. Digamos que es un subconjunto de elementos que pertenecen a ese conjunto definido en sus características al que llamamos población" Hernandez Sampieri, R.(2016). Metodología de la investigación(pp.175). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_instrumento:
+  - text: "Definición de instrumentos"
+
+  utter_paradigma_positivista:
+  - text: '"Su aparición se sitúa en el siglo XIX y principios del XX. Se basa en la teoría positivista del conocimiento. Su acuñamiento se le atribuye a A. Compte y podemos citar entre sus representantes otros autores como Durkheim, Mill, Popper, etc". Ricoy Lorenzo, C. Contribución sobre los paradigmas de investigación. Educação(pp.15-18).
+El paradigma positivista se adoptó como modelo de investigación en las Ciencias Físicas y Naturales, se aplicó al campo social y más tarde al educativo. 
+Para conocer más acerca del tema <a target="_blank" href="http://https://www.redalyc.org/pdf/1171/117117257002.pdf">da click aquí</a>'
+
+  utter_paradigma_interpretativo:
+  - text: 'Se ha dicho que se presentaba como una alternativa a las limitaciones del paradigma positivista en el campo de las Ciencias Sociales y de la Educación, al considerar las diferencias de éstas con relación a las Ciencias Naturales.
+Este paradigma tiene sus antecedentes históricos en la fenomenología, el interaccionismo simbólico interpretativo, la etnografía, la antropología, etc. Sus impulsores surgen de la escuela alemana y se considera a Husserl su fundador. Entre sus autores más representativos están: Dilthey, Baden, Berger, Shutz, Mead, Blumer, Lukman, etc. Ricoy Lorenzo, C. Contribución sobre los paradigmas de investigación. Educação(pp.15-18).
+Para conocer más acerca del tema <a target="_blank" href="http://https://www.redalyc.org/pdf/1171/117117257002.pdf">da click aquí</a>'
+
+  utter_paradigma_sociocr&#237;tico:
+  - text: 'Este paradigma es introducido por la Escuela de Frankfurt en busca de una alternativa al positivista e interpretativo. Cuenta entre los autores representativos (ya clásicos): Horkheimer, Marcuse, Appel y Habermas, Giroux, Car y Kemmis, Freire, etc.
+Exigen del investigador una constante reflexión acción-reflexiónacción, implicando el compromiso del investigador/a desde la práctica para asumir el cambio y la liberación de las opresiones que generen la transformación social. Esto implica un proceso de participación y colaboración desde la autorreflexión crítica en la acción. Ricoy Lorenzo, C. Contribución sobre los paradigmas de investigación. Educação(pp.15-18).
+Para conocer más acerca del tema <a target="_blank" href="http://https://www.redalyc.org/pdf/1171/117117257002.pdf">da click aquí</a>'
+
+  utter_enfoque_cuantitativo:
+  - text: 'El significado de cuantitativo (del latín "quantitas") se vincula a conteos numéricos y métodos matemáticos(Niglas,2010). Actualmente, representa un conjunto de procesos organizado de manera secuencial para comprobar ciertas suposiciones. Hernandez Sampieri, R.(2018). METODOLOGÍA DE LA INVESTIGACIÓN LAS RUTAS CUANTITATIVA, CUALITATIVA Y MIXTA(pp.5). 
+  Para conocer más acerca del tema <a target="_blank" href="https://play.google.com/books/reader?id=5A2QDwAAQBAJ&hl=es_419&pg=GBS.PA4">da click aquí</a>'
+
+  utter_enfoque_cualitativo:
+  - text: 'El termino cualitativo tiene su origen en el latín "qualitas", es el cual hace referencia a la naturaleza, carácter y propiedades de los fenómenos (Niglas,2010).
+  Con el enfoque cualitativo también se estudian fenómenos de manera sistemática. Sin embar go, en lugar de comenzar con una teoría y luego “voltear” al mundo empírico para confirmar si esta es apoyada por los datos y resultados, el investigador comienza el proceso examinando los hechos en sí y revisado los estudios previos, ambas acciones de manera simultánea, a fin de generar una teoría que sea consistente con lo que está observando que ocurre. Hernandez Sampieri, R.(2018). METODOLOGÍA DE LA INVESTIGACIÓN LAS RUTAS CUANTITATIVA, CUALITATIVA Y MIXTA(pp.7). 
+  Para conocer más acerca del tema <a target="_blank" href="https://play.google.com/books/reader?id=5A2QDwAAQBAJ&hl=es_419&pg=GBS.PA4">da click aquí</a>'
+
+  utter_enfoque_cuantitativo_muestra:
+  - text: 'Según Sampieri las muestras del enfoque cuantitativo "deben ser representativas; por tanto, el
+uso de los términos al azar y aleatorio sólo denota un tipo de procedimiento mecánico relacionado con
+la probabilidad y con la selección de elementos o unidades, pero no aclara el tipo de muestra ni el
+procedimiento de muestreo.". Metodología de la investigación(p.175). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_enfoque_cualitativo_muestra:
+  - text: 'Según Sampieri la muestra del enfoque cualitativo " Se determina durante o después de la
+inmersión inicial, se puede ajustar en cualquier momento del estudio, no es probabilística, no busca generalizar resultados". Metodología de la investigación(p.383). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_enfoque_cuantitativo_dise&#241;o:
+  - text: 'Según sampieri "En la literatura sobre la investigación cuantitativa es posible encontrar diferentes clasificaciones de los diseños. En esta obra adoptamos la siguiente clasificación:
+ investigación experimental e investigación no experimental". Metodología de la investigación(p.129). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_dise&#241;o_experimental:
+    - text: 'Los diseños experimentales son los que se efectúan en espacios y escenarios bajo control por el investigador o educador. Consiste en identificar variables relacionadas con un problema y la manipulación deliberada de una o más variables independientes para analizar las consecuencias de esa manipulación sobre una o más variables dependientes. Schuster, Puente, Andrada, Maiza, La metodología cualitativa, herramienta para investigar los fenómenos que ocurren en el aula. La investigacion educativa(p.20). 
+  Para conocer más acerca del tema <a target="_blank" href="http://www.exactas.unca.edu.ar/riecyt/VOL%204%20NUM%202/TEXTO%207.pdf">da click aquí</a>'
+
+  utter_dise&#241;o_noexperimental:
+    - text: 'El diseño no experimental es aquel que estudia y observa los fenómenos tal y como se dan en su contexto natural sin manipular deliberadamente variables o el entorno donde se efectúa el estudio. Schuster, Puente, Andrada, Maiza, La metodología cualitativa, herramienta para investigar los fenómenos que ocurren en el aula. La investigacion educativa(p.20). 
+  Para conocer más acerca del tema <a target="_blank" href="http://www.exactas.unca.edu.ar/riecyt/VOL%204%20NUM%202/TEXTO%207.pdf">da click aquí</a>'
+
+  utter_enfoque_cualitativo_dise&#241;o:
+  - text: "no experimental"
+
+  utter_enfoque_cuantitativo_variables:
+  - text: 'Segun Sampieri al tener un diseño experimental se está en una "situación de control en la cual se manipulan, de manera intencional, una o más <p style="color:blue;">variables independientes</p> (causas) para analizar las consecuencias de tal manipulación sobre una o más <p style="color:blue;">variables dependientes</p> (efectos)". Metodología de la investigación(p.130). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_variable_independiente:
+    - text: 'Según Sampieri "La variable independiente es la que se considera como supuesta causa en una relación entre variables, es la condición antecedente". Metodología de la investigación(p.130). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_variable_dependiente:
+    - text: 'Según Sampieri una variable dependiente es efecto provocado por una causa(Variable independiente). Metodología de la investigación(p.130). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_enfoque_cualitativo_variables:
+  - text: "El enfoque cuantitativo al no tener un diseño experimental,no contiene variables."
+
+  utter_enfoque_cuantitativo_alcance:
+  - text: 'Según Sampieri los alcances del enfoque cuantitativo son: "exploratorios, descriptivos, correlacionales, explicativos." Metodología de la investigación(p.89). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_alcance_exploratorio:
+  - text: 'Según Sampieri los alcances exploratoios "investigan problemas poco estudiados, indagan desde una perspectiva innovadora, ayudan a identificar conceptos promisorios, preparan el terreno para nuevos estudios". Metodología de la investigación(p.89). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_alcance_descriptivo:
+  - text: 'Según Sampieri los alcances descriptivos "Consideran al fenómeno estudiado y sus componentes, miden conceptos,definen variables". Metodología de la investigación(p.89). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_alcance_correlacional:
+  - text: 'Según Sampieri los alcances correlacionales "Asocian conceptos o variables permiten predicciones, cuantifican relaciones entre conceptos o variables". Metodología de la investigación(p.89). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_alcance_explicativo:
+  - text: 'Según Sampieri los alcances explicativos "determinan las causas de los
+fenómenos, generan un sentido de entendimiento, son sumamente estructurados". Metodología de la investigación(p.89). 
+  Para conocer más acerca del tema <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">da click aquí</a>'
+
+  utter_enfoque_cualitativo_alcance:
+  - text: "Teoría fundamentada, etnográfico, narrativos, investigación-Acción, fenomenológicos."
+
+  utter_alcance_teoria_fundamentada:
+  - text: 'La teoría fundamentada (Glaser & Strauss, 1967) se basa en el interaccionismo simbólico. Su planteamiento básico es que las proposiciones teóricas surgen de los datos obtenidos en la investigación, más que de los estudios previos. Es el procedimiento el que genera el entendimiento de un fenómeno educativo, psicológico, comunicativo o cualquier otro que sea concreto. SALGADO LEVANO, Ana Cecilia.Investigación cualitativa: diseños, evaluación del rigor metodológico y retos.
+  Para conocer más acerca del tema <a target="_blank" href="http://http://www.scielo.org.pe/pdf/liber/v13n13/a09v13n13.pdf">da click aquí</a>'
+
+  utter_alcance_etnografico:
+  - text: 'Estos diseños buscan describir y analizar ideas, creencias, significados, conocimientos y prácticas de grupos, culturas y comunidades. Incluso pueden ser muy amplios y abarcar la historia, la geografía y los subsistemas socioeconómico, educativo, político y cultural de un sistema social (rituales, símbolos, funciones sociales, parentesco, migraciones, redes, entre otros). SALGADO LEVANO, Ana Cecilia.Investigación cualitativa: diseños, evaluación del rigor metodológico y retos.
+  Para conocer más acerca del tema <a target="_blank" href="http://http://www.scielo.org.pe/pdf/liber/v13n13/a09v13n13.pdf">da click aquí</a>'
+
+  utter_alcance_narrativo:
+  - text: 'En los diseños narrativos el investigador recolecta datos sobre las historias de vida y experiencias de determinadas personas para describirlas y analizarlas. Son de interés las personas en sí mismas y su entorno. Creswell (2005) señala que el diseño narrativo en diversas ocasiones es un esquema de investigación, pero también es una forma de intervención, ya que el contar una historia ayuda a procesar cuestiones que no estaban claras. Se usa frecuentemente cuando el objetivo es evaluar una sucesión de acontecimientos. SALGADO LEVANO, Ana Cecilia.Investigación cualitativa: diseños, evaluación del rigor metodológico y retos.
+  Para conocer más acerca del tema <a target="_blank" href="http://http://www.scielo.org.pe/pdf/liber/v13n13/a09v13n13.pdf">da click aquí</a>'
+
+  utter_alcance_investigacion-accion:
+  - text: 'La finalidad de la Investigación-Acción es resolver problemas cotidianos e inmediatos, y mejorar prácticas concretas. Su propósito fundamental se centra en aportar información que guíe la toma de decisiones para programas, procesos y reformas estructurales. SALGADO LEVANO, Ana Cecilia.Investigación cualitativa: diseños, evaluación del rigor metodológico y retos.
+  Para conocer más acerca del tema <a target="_blank" href="http://http://www.scielo.org.pe/pdf/liber/v13n13/a09v13n13.pdf">da click aquí</a>'
+
+  utter_alcance_fenomenologico:
+  - text: 'Estos diseños se enfocan en las experiencias individuales subjetivas de los participantes. Responden a la pregunta ¿Cuál es el significado, estructura y esencia de una experiencia vivida por una persona (individual), grupo (grupal) o comunidad (colectiva) respecto de un fenómeno?. El centro de indagación de estos diseños reside en la(s) experiencia(s) del participante o participantes. SALGADO LEVANO, Ana Cecilia.Investigación cualitativa: diseños, evaluación del rigor metodológico y retos.
+  Para conocer más acerca del tema <a target="_blank" href="http://http://www.scielo.org.pe/pdf/liber/v13n13/a09v13n13.pdf">da click aquí</a>'
+
+  utter_enfoque_cuantitativo_instrumentos:
+  - text: 'Según Sampieri los instrumentos que podemos encontrar en el enfoque cuantitativo son: cuestionario, escala tipo Likert, escalograma de Guttman. y otros que puesdes encontrar <a target="_blank" href="http://observatorio.epacartagena.gov.co/wp-content/uploads/2017/08/metodologia-de-la-investigacion-sexta-edicion.compressed.pdf">dando click aquí</a>'
+
+  utter_enfoque_cualitativo_instrumentos:
+  - text: 'Según Tomás J. Campoy Aranda y Elda Gomes Araújo, los instrumentos que podemos encontrar en el enfoque cualitativo son observación participante, grupo nominal, técnica delphi, entrevistaprofunda, grupos de discusión. Para tener más información <a target="_blank" href="http://http://proyectos.javerianacali.edu.co/cursos_virtuales/posgrado/maestria_asesoria_familiar/Investigacion%20I/Material/29_Campoy_T%C3%A9cnicas_e_instrum_cualita_recogidainformacion.pdf">da click aquí</a>'
+
+  utter_paradigma_de_enfoque:
+  - text: 'Según Schuster, Puente, Andrada, Maiza, si estás en el enfoque {enfoque} debes seguir el paradigma {para}. La metodología cualitativa, herramienta para investigar los fenómenos que ocurren en el aula. La investigacion educativa(p.14). 
+  Para conocer más acerca del tema <a target="_blank" href="http://www.exactas.unca.edu.ar/riecyt/VOL%204%20NUM%202/TEXTO%207.pdf">da click aquí</a>'
+
+  utter_enfoque_de_paradigma:
+  - text: 'Según Schuster, Puente, Andrada y Maiza, si tu proyecto se relaciona con el paradigma {para} lo más probable es que tu enfoque sea {enfoque}. La metodología cualitativa, herramienta para investigar los fenómenos que ocurren en el aula. La investigacion educativa(p.14). 
+  Para conocer más acerca del tema <a target="_blank" href="http://www.exactas.unca.edu.ar/riecyt/VOL%204%20NUM%202/TEXTO%207.pdf">da click aquí</a>'
+
+  utter_no_puedo:
+  - text: "Lo siento {name} no te entendí. ¿Puedes redactarme mejor tu pregunta?"
+
+  utter_pregunta/grupo:
+  - text: "GINTEING (Grupo de investigación de tecnología e ingeniería)"
+
+  utter_pregunta/nombre:
+  - text: "Me llamo Alex"
+  - text: "Mi nombre es Alex"
+  - text: "¿Qué tal, compañero? Mi nombre es Alex"
+
+  utter_despedida:
+  - text: "Adiós"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_out_of_scope:
+  - text: Lo siento, no puedo manejar esa solicitud.
+
+actions:
+  - action_name
+  - action_responder
+  - action_responder_paradigma
+  - action_responder_enfoque
+  - action_caracteristica_enfoque
+  - action_paradigma_de_enfoque
+  - action_enfoque_de_paradigma
+  - action_relacion_tipo_investigacion_paradigma_enfoque
+  # - action_relacion_diseno_paradigma_enfoque
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,82 @@
+[
+  {
+    "text": "enfoque cuantitativo",
+    "intent": "preguntar_enfoque",
+    "intent_prediction": {
+      "name": "preguntar_paradigma_de_enfoque",
+      "confidence": 0.3697984516620636
+    }
+  },
+  {
+    "text": "que es el enfoque cuantitativo",
+    "intent": "preguntar_enfoque",
+    "intent_prediction": {
+      "name": "preguntar_paradigma_de_enfoque",
+      "confidence": 0.31904369592666626
+    }
+  },
+  {
+    "text": "tipo de paradigma del enfoque cuantitativo",
+    "intent": "preguntar_paradigma_de_enfoque",
+    "intent_prediction": {
+      "name": "preguntar_caracteristica_enfoque",
+      "confidence": 0.3021959662437439
+    }
+  },
+  {
+    "text": "\u00bfQu\u00e9 enfoque pertenece al paradigma interpretativo?",
+    "intent": "preguntar_enfoque_de_paradigma",
+    "intent_prediction": {
+      "name": "preguntar_paradigma_de_enfoque",
+      "confidence": 0.3293183147907257
+    }
+  },
+  {
+    "text": "si estoy en un paradigma interpretativo que enfoque sigo",
+    "intent": "preguntar_enfoque_de_paradigma",
+    "intent_prediction": {
+      "name": "preguntar_paradigma_de_enfoque",
+      "confidence": 0.31864920258522034
+    }
+  },
+  {
+    "text": "tipo de enfoque del paradigma interpretativo",
+    "intent": "preguntar_enfoque_de_paradigma",
+    "intent_prediction": {
+      "name": "preguntar_paradigma_de_enfoque",
+      "confidence": 0.23184801638126373
+    }
+  },
+  {
+    "text": "que paradigma de investigacion sigo si tengo un tipo de investigacion etnogr&#225;fico",
+    "intent": "relacion_tipo_investigacion_paradigma",
+    "intent_prediction": {
+      "name": "relacion_tipo_investigacion_enfoque",
+      "confidence": 0.4574476182460785
+    }
+  },
+  {
+    "text": "\u00bfQu\u00e9 paradigma sigo si tengo un tipo de investigaci\u00f3n teor&#237;a-fundamentada?",
+    "intent": "relacion_tipo_investigacion_paradigma",
+    "intent_prediction": {
+      "name": "relacion_tipo_investigacion_enfoque",
+      "confidence": 0.5340826511383057
+    }
+  },
+  {
+    "text": "que paradigma sigo si tengo un tipo de investigacion investigaci&#243;n-acci&#243;n",
+    "intent": "relacion_tipo_investigacion_paradigma",
+    "intent_prediction": {
+      "name": "relacion_tipo_investigacion_enfoque",
+      "confidence": 0.5148796439170837
+    }
+  },
+  {
+    "text": "\u00bfQu\u00e9 paradigma sigo si tengo un tipo de investigaci\u00f3n fenomenol&#243;gicos?",
+    "intent": "relacion_tipo_investigacion_paradigma",
+    "intent_prediction": {
+      "name": "relacion_tipo_investigacion_enfoque",
+      "confidence": 0.5055199861526489
+    }
+  }
+]

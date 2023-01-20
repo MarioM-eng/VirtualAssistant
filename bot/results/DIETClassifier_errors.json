@@ -1,0 +1,128 @@
+[
+  {
+    "text": "tipos de investigacion del enfoque cualitativo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "dise&#241;o",
+        "entity": "datoEnfoque"
+      },
+      {
+        "start": 35,
+        "end": 46,
+        "value": "cualitativo",
+        "entity": "enfoque"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "datoEnfoque",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9706704616546631,
+        "value": "tipos",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "enfoque",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.9986275434494019,
+        "value": "cualitativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "si estoy en un paradigma interpretativo que enfoque sigo",
+    "entities": [
+      {
+        "start": 25,
+        "end": 39,
+        "value": "interpretativo",
+        "entity": "para"
+      },
+      {
+        "start": 44,
+        "end": 51,
+        "value": "enfoque",
+        "entity": "dato"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.6955602765083313,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "para",
+        "start": 25,
+        "end": 39,
+        "confidence_entity": 0.9987013339996338,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tipo de enfoque del paradigma interpretativo",
+    "entities": [
+      {
+        "start": 30,
+        "end": 44,
+        "value": "interpretativo",
+        "entity": "para"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dato",
+        "start": 20,
+        "end": 29,
+        "confidence_entity": 0.5509811639785767,
+        "value": "paradigma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "para",
+        "start": 30,
+        "end": 44,
+        "confidence_entity": 0.9986262321472168,
+        "value": "interpretativo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "que enfoque de investigacion sigo si tengo un tipo de investigacion etnogr&#225;fico",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "enfoque",
+        "entity": "dato"
+      },
+      {
+        "start": 68,
+        "end": 84,
+        "value": "etnogr&#225;fico",
+        "entity": "dise&#241;o"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "dise&#241;o",
+        "start": 68,
+        "end": 84,
+        "confidence_entity": 0.998830258846283,
+        "value": "etnogr&#225;fico",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

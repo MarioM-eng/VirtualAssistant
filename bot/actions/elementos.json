@@ -1,0 +1,9 @@
+[
+	{
+		"investigar" : {
+			"paradigma" : ["positivista", "interpretativo", "sociocr&#237;tico"],
+			"enfoque" : ["cuantitativo", "cualitativo"],
+			"dise&#241;o" : ["experimental", "no experimental", "teor&#237;a-fundamentada", "etnogr&#225;fico", "narrativos", "investigaci&#243;n-acci&#243;n", "fenomenol&#243;gicos"]
+		}
+	}
+]

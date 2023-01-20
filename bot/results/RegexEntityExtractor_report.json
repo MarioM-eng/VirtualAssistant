@@ -1,0 +1,62 @@
+{
+  "dise&#241;o": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 16,
+    "confused_with": {}
+  },
+  "datoEnfoque": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "enfoque": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 15,
+    "confused_with": {}
+  },
+  "dato": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 30,
+    "confused_with": {}
+  },
+  "name": {
+    "precision": 1.0,
+    "recall": 0.35714285714285715,
+    "f1-score": 0.5263157894736842,
+    "support": 14,
+    "confused_with": {}
+  },
+  "para": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.05154639175257732,
+    "f1-score": 0.0980392156862745,
+    "support": 97
+  },
+  "macro avg": {
+    "precision": 0.16666666666666666,
+    "recall": 0.05952380952380953,
+    "f1-score": 0.08771929824561403,
+    "support": 97
+  },
+  "weighted avg": {
+    "precision": 0.14432989690721648,
+    "recall": 0.05154639175257732,
+    "f1-score": 0.0759631036353771,
+    "support": 97
+  }
+}

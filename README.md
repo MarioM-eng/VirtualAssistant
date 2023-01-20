@@ -1,4 +1,4 @@
-# chatbot-for-classroom-projects
+# VirtualAssistant
 Desarrollo de un Asistente Virtual mediante la tecnología Chat-Bot para el apoyo en la elaboración de proyectos de aula.
 
 Este proyecto se desarrolló con la ayuda del framework [RASA](https://rasa.com/), el cual es orientado a la construcción de asistentes de IA basados en chat y voz.
